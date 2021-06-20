@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <titl>
+            Form Field
+        </titl>
+    </head>
+    <body>
+        VINOD STARTED PREPARATION
+        <form action="registration" method="post"> 
+            <!-- http://127.0.0.1:5500/Chirag/Class1_form/index.html?gender=on     
+            Name is Used for to pass data From Form to Server Shown in URL
+        gender=bgg&password=&email=v%40gmail.com&Address=&gender=on&course=Advancer&des=&paswword=
+    Why gender is on ???   
+    -->
+            <div> 
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter Name" name="gender" />
+        </div>
+
+        <div>   
+            <label for="phonenumber"> Phone Number</label>
+            <input type="number" id="phonenumber" name="password"/>
+        </div>
+
+        <div>   
+            <label for="email">Email</label>
+            <input type="email"  id="email"required name="email"/>
+        </div>
+
+        <div> 
+            <label>Address</label>
+            <input type="text" name="Address"/>
+        </div>
+        
+        <div>
+            <!-- //name is for group -->
+            <label>Gender</label>
+
+            <label>Male</label>
+            <input type="radio" name="gender" value="Male"/>
+
+            <label>Female</label>
+            <input type="radio" name="gender" value="Female"/>
+        </div>
+        <div>
+            <label>Course</label>
+            <select name="course">
+                <option value="Advancer">
+                    Advancer
+                </option>
+                <option value="Builder">Builder</option>
+            </select>
+        </div>
+        <div>
+            <label>Description</label>
+            <textarea name="des"></textarea>
+        </div>
+
+        <div>
+            <label>Password</label>
+            <input type="password" name="paswword"/>
+        </div>
+      <!-- id and for Use if we click on text with cursor it reference to input type -->
+        <div>
+            <input type="checkbox" id="focus"required/>
+            <label for="focus">Yes,I do accept the T & C</label>
+        </div>
+        <button>submit</button>
+    </form>
+
+    </body>
+</html>
